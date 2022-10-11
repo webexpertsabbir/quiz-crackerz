@@ -5,6 +5,7 @@ import Main from './Layout/Main';
 import Topics from './components/Topics/Topics';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
+import SingelTopic from './components/SingelTopic/SingelTopic';
 
 function App() {
 
@@ -25,6 +26,13 @@ function App() {
         {
           path: '/blog',
           element: <Blog></Blog>
+        },
+        {
+          path: '/topic/:topicId',
+          loader: async ({params}) =>{
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`)
+          },
+          element: <SingelTopic></SingelTopic>
         }
       ]
 

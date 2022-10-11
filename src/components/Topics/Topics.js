@@ -1,12 +1,13 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { createBrowserRouter, useLoaderData } from 'react-router-dom';
 import Banner from '../Banner/Banner';
 import Topic from '../Topic/Topic';
 
 const Topics = () => {
     const previousTopics = useLoaderData();
     const topics = previousTopics.data;
-    console.log(topics);
+    // console.log(topics);
+    
     return (
         <div className=''>
             <Banner></Banner>
