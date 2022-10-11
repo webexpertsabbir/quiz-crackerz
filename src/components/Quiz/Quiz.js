@@ -1,20 +1,34 @@
 import React from 'react';
 import QuizOption from '../QuizOption/QuizOption';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Quiz = ({quiz}) => {
     // console.log(quiz)
     const { question, options, correctAnswer} = quiz;
     // console.log(correctAnswer)
     // const totify = 
+    const notify = () => toast("congratulations! Correct answer");
+    const notify2 = () => toast("Worng Answer");
+
+
     const quizAlert = (e) =>{
         const tost = e.target.innerText;
         const carect = correctAnswer;
+
+       
+        // tost === carect ? notify() : notify();
         
-        if(carect === tost){
-           
+        if(tost === carect){
+             return notify();
         }
+        // else if(tost !== carect){
+        //      alert('Wornd Answer')
+        // }
         else{
-            
+    
+            return notify2();
         }
     }
     return (
@@ -30,7 +44,10 @@ const Quiz = ({quiz}) => {
                             quizAlert={quizAlert}
 
                         ></QuizOption>)
-                    }   
+                    } 
+                    <ToastContainer />
+
+                       
                 </form>
             </div>
         </div>

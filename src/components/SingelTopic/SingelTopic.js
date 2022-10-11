@@ -12,6 +12,7 @@ const SingelTopic = () => {
         <div className='px-52'>
             <div >
                 <h2 className='text-3xl font-bold'>Quiz of{title.name}</h2>
+                
             </div>
             {
                 singelQuiz.map( quiz => <Quiz

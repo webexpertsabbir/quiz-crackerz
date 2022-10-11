@@ -7,6 +7,7 @@ import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
 import SingelTopic from './components/SingelTopic/SingelTopic';
 
+
 function App() {
 
   const router = createBrowserRouter([
