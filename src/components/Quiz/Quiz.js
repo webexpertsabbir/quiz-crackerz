@@ -47,7 +47,7 @@ const Quiz = ({quiz}) => {
                 <span onClick={() => answerHandeler() }><EyeIcon className="h-6 w-6 text-stone-600"/></span>
             </div>
             <div className='px-9'>
-                <form className='grid grid-cols-2 gap-10 p-6' action="">
+                <form className='grid md:grid-cols-2 gap-10 p-6' action="">
                     {
                         options.map((option, idx) => <QuizOption
                             key={idx}
