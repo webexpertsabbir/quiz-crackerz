@@ -16,7 +16,7 @@ const Header = () => {
 
                 <h2 className='text-2xl text-green-900 font-bold '>Quiz Online</h2>
                 <div className='text-xl font-semibold menu'>
-                    <div onClick={() => setOpen(!open)} class="h-8 w-8 md:hidden">
+                    <div onClick={() => setOpen(!open)} className="h-8 w-8 md:hidden">
                         {
                             open ? <XMarkIcon/> : <Bars3Icon/>
                         }
