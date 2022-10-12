@@ -43,7 +43,7 @@ const Quiz = ({quiz}) => {
     return (
         <div>
             <div className='title-icon'>
-                <h2 className='text-2xl'><b>Quiz:</b>{question}</h2>
+                <h2 className='text-2xl'><b>Quiz:</b> {question}</h2>
                 <span onClick={() => answerHandeler() }><EyeIcon className="h-6 w-6 text-stone-600"/></span>
             </div>
             <div className='px-9'>

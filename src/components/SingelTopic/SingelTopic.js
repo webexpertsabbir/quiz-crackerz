@@ -9,9 +9,9 @@ const SingelTopic = () => {
     const singelQuiz = title.questions;
     // console.log(singelQuiz)
     return (
-        <div className='px-52'>
+        <div className='lg:px-52'>
             <div >
-                <h2 className='text-3xl font-bold'>Quiz of{title.name}</h2>
+                <h2 className='text-3xl font-bold py-10'>Quiz of {title.name}</h2>
                 
             </div>
             {

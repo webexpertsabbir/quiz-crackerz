@@ -11,7 +11,7 @@ const Topics = () => {
     return (
         <div className=''>
             <Banner></Banner>
-            <div className='grid grid-cols-4 gap-4 px-24 py-12'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-4  gap-4 px-24 py-12 pb-28'>
                 {
                 topics.map(topic => <Topic
                 key={topic.id}
