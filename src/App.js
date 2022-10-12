@@ -6,6 +6,7 @@ import Topics from './components/Topics/Topics';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
 import SingelTopic from './components/SingelTopic/SingelTopic';
+import Page404 from './components/Page404/Page404';
 
 
 function App() {
@@ -37,7 +38,12 @@ function App() {
         }
       ]
 
+    },
+    {
+      path: '*',
+      element: <Page404></Page404>,
     }
+    
   ])
 
   return (
